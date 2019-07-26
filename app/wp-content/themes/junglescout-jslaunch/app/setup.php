@@ -11,6 +11,7 @@ use Roots\Sage\Template\BladeProvider;
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_style('googlefonts/montserrat', "https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap", false, null);
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 
@@ -28,7 +29,7 @@ add_action('after_setup_theme', function () {
      * @link https://roots.io/plugins/soil/
      */
     add_theme_support('soil-clean-up');
-    add_theme_support('soil-jquery-cdn');
+    add_theme_support('soil-js-to-footer');
     add_theme_support('soil-nav-walker');
     add_theme_support('soil-nice-search');
     add_theme_support('soil-relative-urls');
