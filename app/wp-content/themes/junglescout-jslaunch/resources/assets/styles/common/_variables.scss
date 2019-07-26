@@ -1,9 +1,15 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
+$green: #0fb682;
+$orange: #f57706;
+
 $theme-colors: (
-  primary: #525ddc
+  primary: #042bdc
 );
+
+$header-bg-color: $orange;
+$footer-bg-color: $orange;
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;

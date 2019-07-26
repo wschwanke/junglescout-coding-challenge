@@ -5,3 +5,8 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+#header {
+  height: 64px;
+  background-color: $header-bg-color;
+}
