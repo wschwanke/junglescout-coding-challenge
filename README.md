@@ -1,3 +1,8 @@
+# Jungle Scout Coding Challenge
+## Wordpress Login Information
+- junglescout
+- d$e5X$uL9Z#Sv4Ci)o
+
 ![PHP Docker Boilerplate](https://static.webdevops.io/php-docker-boilerplate.svg)
 
 [![latest v5.2.0-beta3](https://img.shields.io/badge/latest-v5.2.0_beta3-green.svg?style=flat)](https://github.com/webdevops/php-docker-boilerplate/releases/tag/5.2.0-beta3)
