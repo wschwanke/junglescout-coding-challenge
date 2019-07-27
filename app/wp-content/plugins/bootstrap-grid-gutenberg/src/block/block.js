@@ -25,15 +25,15 @@ const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.b
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'cgb/block-bootstrap-grid-gutenberg', {
+registerBlockType( 'block-bootstrap-grid-gutenberg', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'bootstrap-grid-gutenberg - CGB Block' ), // Block title.
+	title: __( 'Bootstrap Row' ), // Block title.
 	icon: 'shield', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'layout', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'bootstrap-grid-gutenberg — CGB Block' ),
-		__( 'CGB Example' ),
-		__( 'create-guten-block' ),
+		__( 'bootstrap' ),
+		__( 'row' ),
+		__( 'grid' ),
 	],
 
 	/**
@@ -43,6 +43,8 @@ registerBlockType( 'cgb/block-bootstrap-grid-gutenberg', {
 	 * The "edit" property must be a valid function.
 	 *
 	 * @link https://wordpress.org/gutenberg/handbook/block-api/block-edit-save/
+	 * @param {Object} props The props that will be passed down to the block
+	 * @returns {JSX} returns the jsx for the block
 	 */
 	edit: function( props ) {
 		// Creates a <p class='wp-block-cgb-block-bootstrap-grid-gutenberg'></p>.
