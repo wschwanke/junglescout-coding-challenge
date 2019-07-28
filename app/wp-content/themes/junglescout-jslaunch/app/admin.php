@@ -14,6 +14,27 @@ add_action('customize_register', function (\WP_Customize_Manager $wp_customize) 
             bloginfo('name');
         }
     ]);
+
+    $wp_customize->add_section( 'js_launch_settings' , [
+        'title'    => __( 'Jungle Scout Launch Settings', 'junglescout_jslaunch' ),
+        'priority' => 30
+    ] );
+
+    $wp_customize->add_setting( 'js_launch_hero_image' , [
+        'transport' => 'refresh',
+    ] );
+
+    $wp_customize->add_control(
+        new \WP_Customize_Image_Control(
+            $wp_customize,
+            'homepage_hero_image',
+            [
+                'label'      => __( 'Upload or select a hero image', 'junglescout_jslaunch' ),
+                'section'    => 'js_launch_settings',
+                'settings'   => 'js_launch_hero_image',
+            ]
+        )
+    );
 });
 
 /**

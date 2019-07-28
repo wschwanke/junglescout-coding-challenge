@@ -1,0 +1,25 @@
+.homepage--header {
+  color: $white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homepage--header__testimonial {
+  font-size: 0.85em;
+}
+
+.homepage--header__reference {
+  font-size: 0.75em;
+  color: var(--muted);
+
+  span,
+  img {
+    display: block;
+  }
+
+  img {
+    margin: 0 auto;
+    height: 16px;
+  }
+}
