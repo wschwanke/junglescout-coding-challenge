@@ -3,3 +3,23 @@
     font-weight: #{$weight-number};
   }
 }
+
+.remove-wp-cols {
+  .wp-block-column:not(:first-child) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .wp-block-column:nth-child(2n) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+a:not(.btn) {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

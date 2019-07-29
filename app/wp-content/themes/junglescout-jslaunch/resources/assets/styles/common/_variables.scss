@@ -6,13 +6,15 @@ $secondary: #f57706;
 $tertiary: #0fb682;
 $bluegrey: #85959d;
 $muted: #656565;
+$border: #dde2e4;
 
 $theme-colors: (
   primary: $primary,
   secondary: $secondary,
   tertiary: $tertiary,
   bluegrey: $bluegrey,
-  muted: $muted
+  muted: $muted,
+  border: $border
 );
 
 $header-bg-color: var(--secondary);

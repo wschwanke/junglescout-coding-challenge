@@ -1,0 +1,21 @@
+// Add check marks to lists
+ul.checkmarks {
+  list-style: none;
+
+  li {
+    position: relative;
+    padding-left: 24px;
+  }
+
+  li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../images/check.svg");
+    background-repeat: no-repeat;
+    height: 14px;
+    width: 14px;
+    top: 2px;
+    left: 0;
+  }
+}
