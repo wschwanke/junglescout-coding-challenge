@@ -3,7 +3,7 @@ interface Settings {
 }
 
 const settings =  {
-  wordpressUri: 'http://localhost:8000'
+  wordpressUri: 'http://localhost:8000/wp-json/wp/v2'
 };
 
 export { settings };

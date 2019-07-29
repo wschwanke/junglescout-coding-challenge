@@ -15,9 +15,14 @@ import PageList from '../PageList';
 
 const App: React.FC = () => {
   return (
-    <div className="App conatiner">
+    <div className="App container">
       <div className="row">
-        <PageList />
+        <h1 className="col-12">This page list works</h1>
+        <PageList route="/pages" />
+      </div>
+      <div className="row">
+        <h1 className="col-12">This page list throws an error</h1>
+        <PageList route="/page2s" />
       </div>
     </div>
   );
