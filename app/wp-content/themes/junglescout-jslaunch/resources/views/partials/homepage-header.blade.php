@@ -1,7 +1,7 @@
 <div class="homepage--header row pt-6 pb-6 mb-6" style="background-image: url('<?= get_theme_mod("js_launch_hero_image") ?>')">
   <div class="container">
     <div class="row homepage--header__cta">
-      <div class="col-12 col-md-6 mb-5">
+      <div class="col-12 col-md-6 mb-3 mb-md-5">
         <h2 class="h1 mb-4"><?= get_theme_mod("js_launch_hero_heading") ?></h2>
         <p class="w-75 mb-0 font-weight-500"><?= get_theme_mod("js_launch_hero_subtext") ?></p>
       </div>
