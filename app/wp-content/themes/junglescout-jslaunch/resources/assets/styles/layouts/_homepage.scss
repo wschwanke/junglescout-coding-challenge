@@ -1,0 +1,143 @@
+/**
+ * Styles that control the hero image at the top of the homepage
+ */
+.homepage--header {
+  color: $white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homepage--header__testimonial {
+  font-size: 0.85em;
+}
+
+.homepage--header__testimonial--person {
+  display: flex;
+  flex: 1 1 auto;
+
+  img {
+    width: 25%;
+  }
+}
+
+.homepage--header__testimonial--nameloc {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 1rem;
+
+  span {
+    font-weight: 500;
+  }
+}
+
+.homepage--header__reference {
+  font-size: 0.75em;
+  color: $muted;
+
+  span,
+  img {
+    display: block;
+  }
+
+  img {
+    margin: 0 auto;
+    height: 16px;
+  }
+}
+
+/**
+ * Styles that control the product bundles on the homepage
+ */
+.homepage--product_bundles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.homepage--product_bundles__product {
+  position: relative;
+  display: flex;
+  flex: 0 0 32%;
+  flex-direction: column;
+  max-width: 32%;
+  padding: 50px 30px 40px;
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 10px 10px 4px 4px;
+}
+
+@include media-breakpoint-down(md) {
+  .homepage--product_bundles {
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+    height: 100%;
+  }
+
+  .homepage--product_bundles__product {
+    flex: 0 0 55%;
+    min-width: 55%;
+    max-width: 55%;
+    margin-bottom: $spacer * 2;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .homepage--product_bundles__product {
+    flex: 0 0 85%;
+    min-width: 85%;
+    max-width: 85%;
+    margin-bottom: $spacer * 2;
+  }
+}
+
+.homepage--product_bundles__product::before {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  height: 12px;
+  width: calc(100% + 2px);
+  background-color: $bluegrey;
+  border: 1px solid $bluegrey;
+  border-radius: 6px 6px 0 0;
+  content: "";
+}
+
+.homepage--product_bundles__heading {
+  color: $bluegrey;
+}
+
+.homepage--product_bundles__valued {
+  color: $bluegrey;
+  margin-bottom: 0;
+}
+
+.homepage--product_bundles__price {
+  margin-bottom: 0;
+}
+
+.homepage--product_bundles__savings {
+  color: $tertiary;
+}
+
+.homepage--product_bundles__list {
+  padding: 0;
+}
+
+.homepage--product_bundles__button {
+  margin-top: auto;
+}
+
+.homepage--product_bundles__product.focus {
+  &::before {
+    background-color: $tertiary;
+    border: 1px solid $tertiary;
+  }
+
+  .homepage--product_bundles__heading {
+    color: $body-color;
+  }
+}

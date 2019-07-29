@@ -1,0 +1,41 @@
+// Styles that use our bootstrap config to move the image of the
+// product showcase
+@include media-breakpoint-down(sm) {
+  .wp-block-product-showcase__content {
+    p,
+    h3,
+    ul {
+      padding: 0 !important;
+    }
+  }
+
+  .wp-block-js-block-product-showcase.right {
+    .wp-block-product-showcase__content {
+      order: 2;
+    }
+
+    .wp-block-product-showcase__image {
+      order: 1;
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .wp-block-js-block-product-showcase.left {
+    .wp-block-product-showcase__content {
+      order: 2;
+    }
+
+    .wp-block-product-showcase__image {
+      order: 1;
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
