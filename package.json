@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@types/jquery": "^3.3.30"
+  },
+  "devDependencies": {
+    "@types/whatwg-fetch": "^0.0.33",
+    "whatwg-fetch": "^3.0.0"
+  }
+}
