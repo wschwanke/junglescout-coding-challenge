@@ -17,7 +17,15 @@
   flex: 1 1 auto;
 
   img {
-    width: 25%;
+    width: 15%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .homepage--header__testimonial--person {
+    img {
+      width: 25%;
+    }
   }
 }
 
@@ -95,6 +103,7 @@
 }
 
 .homepage--product_bundles__product::before {
+  content: "";
   position: absolute;
   top: 0;
   left: -1px;
@@ -103,7 +112,6 @@
   background-color: $bluegrey;
   border: 1px solid $bluegrey;
   border-radius: 6px 6px 0 0;
-  content: "";
 }
 
 .homepage--product_bundles__heading {
@@ -135,6 +143,16 @@
   &::before {
     background-color: $tertiary;
     border: 1px solid $tertiary;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../images/img_card-badge.png");
+    top: 0;
+    right: -1px;
+    width: 82px;
+    height: 82px;
   }
 
   .homepage--product_bundles__heading {
