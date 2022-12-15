@@ -4,43 +4,41 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7c6744f69a69155001bd2d1271a7953",
+    "content-hash": "6ff4bc5cc0de29440779f6280918cab2",
     "packages": [
         {
-            "name": "composer/installers",
-            "version": "v1.6.0",
+            "name": "roots/soil",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/composer/installers.git",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
+                "url": "https://github.com/roots/soil.git",
+                "reference": "99499faf19a272f6aae3dd145b5a90d8f9a49d3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+                "url": "https://api.github.com/repos/roots/soil/zipball/99499faf19a272f6aae3dd145b5a90d8f9a49d3e",
+                "reference": "99499faf19a272f6aae3dd145b5a90d8f9a49d3e",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0"
-            },
-            "replace": {
-                "roundcube/plugin-installer": "*",
-                "shama/baton": "*"
+                "php": ">=5.6.0"
             },
             "require-dev": {
-                "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "^4.8.36"
+                "brain/monkey": "^2.5",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "mockery/mockery": "^1.3 | ^1.4",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpunit/phpunit": "<= 9.3",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.3"
             },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Composer\\Installers\\Plugin",
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
+            "type": "wordpress-plugin",
             "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
                 "psr-4": {
-                    "Composer\\Installers\\": "src/Composer/Installers"
+                    "Roots\\Soil\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -49,119 +47,19 @@
             ],
             "authors": [
                 {
-                    "name": "Kyle Robinson Young",
-                    "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama"
-                }
-            ],
-            "description": "A multi-framework Composer library installer",
-            "homepage": "https://composer.github.io/installers/",
-            "keywords": [
-                "Craft",
-                "Dolibarr",
-                "Eliasis",
-                "Hurad",
-                "ImageCMS",
-                "Kanboard",
-                "Lan Management System",
-                "MODX Evo",
-                "Mautic",
-                "Maya",
-                "OXID",
-                "Plentymarkets",
-                "Porto",
-                "RadPHP",
-                "SMF",
-                "Thelia",
-                "WolfCMS",
-                "agl",
-                "aimeos",
-                "annotatecms",
-                "attogram",
-                "bitrix",
-                "cakephp",
-                "chef",
-                "cockpit",
-                "codeigniter",
-                "concrete5",
-                "croogo",
-                "dokuwiki",
-                "drupal",
-                "eZ Platform",
-                "elgg",
-                "expressionengine",
-                "fuelphp",
-                "grav",
-                "installer",
-                "itop",
-                "joomla",
-                "kohana",
-                "laravel",
-                "lavalite",
-                "lithium",
-                "magento",
-                "majima",
-                "mako",
-                "mediawiki",
-                "modulework",
-                "modx",
-                "moodle",
-                "osclass",
-                "phpbb",
-                "piwik",
-                "ppi",
-                "puppet",
-                "pxcms",
-                "reindex",
-                "roundcube",
-                "shopware",
-                "silverstripe",
-                "sydes",
-                "symfony",
-                "typo3",
-                "wordpress",
-                "yawik",
-                "zend",
-                "zikula"
-            ],
-            "time": "2018-08-27T06:10:37+00:00"
-        },
-        {
-            "name": "roots/soil",
-            "version": "3.8.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/roots/soil.git",
-                "reference": "7920eb22bb434c1b86ff3d4d7dc318498de0c675"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/7920eb22bb434c1b86ff3d4d7dc318498de0c675",
-                "reference": "7920eb22bb434c1b86ff3d4d7dc318498de0c675",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "^2.5.1"
-            },
-            "type": "wordpress-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs"
+                },
                 {
                     "name": "Scott Walkinshaw",
                     "email": "scott.walkinshaw@gmail.com",
                     "homepage": "https://github.com/swalkinshaw"
                 },
                 {
-                    "name": "Ben Word",
-                    "email": "ben@benword.com",
-                    "homepage": "https://github.com/retlehs"
+                    "name": "QWp6t",
+                    "email": "craig@roots.io",
+                    "homepage": "https://github.com/qwp6t"
                 }
             ],
             "description": "A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications",
@@ -169,7 +67,22 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2019-05-23T21:45:50+00:00"
+            "support": {
+                "forum": "https://discourse.roots.io/",
+                "issues": "https://github.com/roots/soil/issues",
+                "source": "https://github.com/roots/soil/tree/4.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://roots.io/plugins/soil/",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/rootsdev",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-08-01T14:57:35+00:00"
         }
     ],
     "packages-dev": [],
@@ -179,5 +92,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
